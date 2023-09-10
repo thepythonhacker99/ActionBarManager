@@ -1,0 +1,4 @@
+name: ActionBarManager
+version: '${project.version}'
+main: jesse.applesweat.actionbarmanager.Plugin.ActionBarManager
+api-version: '1.19'
