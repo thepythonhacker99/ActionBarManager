@@ -168,9 +168,7 @@ public class ActionBarAPI {
      */
     public static void sendActionBar(@NotNull ComponentLike message, long duration, @NotNull MessagePriority priority, Player... players) {
         if (players.length == 0) {
-            Bukkit.getOnlinePlayers().forEach(player -> {
-                ActionBarSender.sendActionBarMessage(player, message, duration, priority);
-            });
+            Bukkit.getOnlinePlayers().forEach(player -> ActionBarSender.sendActionBarMessage(player, message, duration, priority));
         } else {
             for (Player player : players) {
                 ActionBarSender.sendActionBarMessage(player, message, duration, priority);
